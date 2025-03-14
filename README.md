@@ -56,7 +56,7 @@ kubectl get services
 
 To access the application locally:
 ```bash
-kubectl port-forward service/nodejs-app-service 3000:3000
+kubectl port-forward service/k8s-web-server-service 3000:3000
 ```
 
 The application will be available at:
