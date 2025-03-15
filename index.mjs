@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    const message = `Hello World, I'm running on ${os.hostname()} : Version 1.2.1`;
+    const message = `Hello World, I'm running on ${os.hostname()} : Version 1.2.4`;
     res.send(message);
 });
 
