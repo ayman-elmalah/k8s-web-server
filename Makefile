@@ -2,7 +2,7 @@
 .PHONY: deploy service forward all clean
 
 # Deploy everything
-start: deploy service forward
+run: deploy service forward
 
 # Apply deployment
 deploy:

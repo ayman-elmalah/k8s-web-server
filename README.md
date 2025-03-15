@@ -22,7 +22,7 @@ cd k8s-web-server
 
 Build the Docker image locally:
 ```bash
-docker build . -t aymanelmalah/k8s-web-server
+docker build . -t aymanelmalah/k8s-web-server:1.2.0
 ```
 
 ### Push to Docker Registry
@@ -34,7 +34,7 @@ docker login
 
 Push the image:
 ```bash
-docker push aymanelmalah/k8s-web-server
+docker push aymanelmalah/k8s-web-server:1.2.0
 ```
 
 ### Deploying to Kubernetes
@@ -57,6 +57,11 @@ kubectl get services
 To access the application locally:
 ```bash
 kubectl port-forward service/k8s-web-server-service 3000:3000
+```
+
+or using minikube:
+```bash
+minikube service k8s-web-server-service
 ```
 
 The application will be available at:

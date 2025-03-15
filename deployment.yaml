@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: k8s-web-server
-        image: aymanelmalah/k8s-web-server:latest
+        image: aymanelmalah/k8s-web-server:1.2.1
         ports:
         - containerPort: 3000 
